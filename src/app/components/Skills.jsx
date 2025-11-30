@@ -15,6 +15,7 @@ import JqueryImg from "../../../public/images/jquery.svg";
 import OracleImg from "../../../public/images/oracle.svg";
 import ReactImg from "../../../public/images/react.svg";
 import SpringImg from "../../../public/images/spring.svg";
+import VueJsImg from "../../../public/images/vuejs.svg";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
@@ -39,35 +40,42 @@ const Skills = () => {
             <div className="skill-img">
               <Image src={HtmlImg} />
             </div>
-            <p>実務経験3.5年</p>
+            <p>実務経験5年</p>
           </div>
           <div className="skill">
             <p>CSS</p>
             <div className="skill-img">
               <Image src={CssImg} alt="works-image" />
             </div>
-            <p>実務経験3.5年</p>
+            <p>実務経験5年</p>
           </div>
           <div className="skill">
             <p>JavaScript</p>
             <div className="skill-img">
               <Image src={JavaScriptImg} alt="works-image" />
             </div>
-            <p>実務経験3.5年</p>
+            <p>実務経験5年</p>
           </div>
           <div className="skill">
             <p>TypeScript</p>
             <div className="skill-img">
               <Image src={TypeScriptImg} alt="works-image" />
             </div>
-            <p>実務経験1年</p>
+            <p>実務経験3年</p>
+          </div>
+          <div className="skill">
+            <p>Vue.js</p>
+            <div className="skill-img">
+              <Image src={VueJsImg} alt="works-image" />
+            </div>
+            <p>実務経験1.9年</p>
           </div>
           <div className="skill">
             <p>jQuery</p>
             <div className="skill-img">
               <Image src={JqueryImg} alt="works-image" />
             </div>
-            <p>実務経験1.5年</p>
+            <p>実務経験2年</p>
           </div>
           <div className="skill">
             <p>React</p>
@@ -95,21 +103,21 @@ const Skills = () => {
             <div className="skill-img">
               <Image src={JavaImg} alt="works-image" />
             </div>
-            <p>実務経験3.5年</p>
+            <p>実務経験3.7年</p>
           </div>
           <div className="skill">
             <p>SpringBoot</p>
             <div className="skill-img">
               <Image src={SpringImg} alt="works-image" />
             </div>
-            <p>実務経験1年</p>
+            <p>実務経験1.6年</p>
           </div>
           <div className="skill">
             <p>SQL</p>
             <div className="skill-img">
               <Image src={OracleImg} alt="works-image" />
             </div>
-            <p>実務経験2年</p>
+            <p>実務経験3年</p>
           </div>
           <div className="skill">
             <p>Ruby</p>
@@ -130,14 +138,14 @@ const Skills = () => {
             <div className="skill-img">
               <Image src={GitHubImg} alt="works-image" />
             </div>
-            <p>実務経験1年</p>
+            <p>実務経験3年</p>
           </div>
           <div className="skill">
             <p>Linux</p>
             <div className="skill-img">
               <Image src={LinuxImg} alt="works-image" />
             </div>
-            <p>実務経験2年</p>
+            <p>実務経験5年</p>
           </div>
         </div>
       </motion.div>

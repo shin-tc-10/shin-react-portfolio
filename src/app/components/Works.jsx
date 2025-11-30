@@ -25,6 +25,21 @@ function Works() {
       <h2>Works</h2>
       <br/>
       <div className="works-app-box">
+        <div className="works-app" ref={ref2}>
+          <motion.div initial="hidden" animate={inView2 ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }}>
+            <div className="works-img">
+              <Image src={NextPortfolioSiteImage} alt="works-image" />
+            </div>
+            <div className="button-link">
+              <a href="https://shin-react-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
+                <span>Portfolio Site</span>
+              </a>
+              <a href="https://github.com/shin-tc-10/shin-react-portfolio" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
+                <span>ソースコード</span>
+              </a>
+            </div>
+          </motion.div>
+        </div>
         <div className="works-app" ref={ref}>
           <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }} >
             <div className="works-img sample7">
@@ -45,30 +60,15 @@ function Works() {
             </div>
           </motion.div>
         </div>
-        <div className="works-app" ref={ref2}>
-          <motion.div initial="hidden" animate={inView2 ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }}>
-            <div className="works-img">
-              <Image src={NextPortfolioSiteImage} alt="works-image" />
-            </div>
-            <div className="button-link">
-              <a href="https://shin-react-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
-                <span>Portfolio Site</span>
-              </a>
-              <a href="https://github.com/shin-tc-10/shin-react-portfolio" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
-                <span>ソースコード</span>
-              </a>
-            </div>
-          </motion.div>
-        </div>
         <div className="works-app" ref={ref3}>
           <motion.div initial="hidden" animate={inView3 ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }}>
             <div className="works-img">
               <Image src={NextBlogAppImage} alt="works-image" />
             </div>
             <div className="button-link">
-              <a href="https://shin-next-blog-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
+              {/* <a href="https://shin-next-blog-app.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
                 <span>Blog App</span>
-              </a>
+              </a> */}
               <a href="https://github.com/shin-tc-10/next-blog-app" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
                 <span>ソースコード</span>
               </a>
