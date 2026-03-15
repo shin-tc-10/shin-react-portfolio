@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import ZennImage from "../../../public/images/zenn.png";
 import GitHubImage from "../../../public/images/gitHub.png";
 
 
@@ -28,18 +27,6 @@ const MyLink = () => {
       >
         <h2>Blog/GitHub</h2>
         <div className="works-app-box">
-        <div className="works-app" ref={ref}>
-          <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }} >
-            <div className="works-img">
-              <Image src={ZennImage} alt="works-image" />
-            </div>
-            <div className="button-link">
-                <a href="https://zenn.dev/shin_re" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
-                  <span>Zenn</span>
-                </a>
-            </div>
-          </motion.div>
-        </div>
         <div className="works-app" ref={ref2}>
           <motion.div initial="hidden" animate={inView2 ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }}>
             <div className="works-img">
