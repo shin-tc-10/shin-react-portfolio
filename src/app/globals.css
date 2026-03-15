@@ -17,7 +17,7 @@ body::before {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  background-image: url('../../public/images/top-image.jpg');
+  background-image: url('../../public/images/top-image.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -522,25 +522,47 @@ footer img {
   }
 
   /** qualifications */
-  .qualifications-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
+  .qualification-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 8px 40px 32px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .qualification {
-    margin: 0 auto;
-    margin-bottom: 30px;
+  .qualification-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px 18px;
+    text-align: left;
+    backdrop-filter: blur(4px);
+    transition: transform 0.2s ease, background 0.3s ease;
   }
 
-  .qualification-img img {
-    /* width: 100%; */
+  .qualification-card:hover {
+    transform: translateY(-4px);
+    background: var(--hover-bg);
   }
 
-  .qualifications p {
+  .qualification-badge {
+    display: inline-block;
+    font-size: 0.65rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding: 15px 0;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: 1px solid currentColor;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+  }
+
+  .qualification-name {
+    font-size: 0.9rem !important;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 !important;
   }
 
 
@@ -589,11 +611,11 @@ footer img {
   .works-app-box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .works-app {
     width: 50%;
-    margin: auto;
     margin-bottom: 30px;
   }
 
@@ -649,25 +671,27 @@ footer img {
   }
 
   /** qualifications */
-  .qualifications-box {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
+  .qualification-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 8px 40px 32px;
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  .qualification {
-    margin: 0 auto;
-    margin-bottom: 30px;
+  .qualification-card {
+    padding: 20px 18px;
+    text-align: left;
   }
 
-  .qualification-img img {
-    /* width: 100%; */
+  .qualification-badge {
+    text-align: left;
   }
 
-  .qualifications p {
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 15px 0;
+  .qualification-name {
+    font-size: 0.9rem !important;
+    text-align: left;
   }
 
 }

@@ -26,20 +26,18 @@ const MyLink = () => {
         transition={{ duration: 2.0 }}
       >
         <h2>GitHub</h2>
-        <div className="works-app-box">
-        <div className="works-app" ref={ref2}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }} ref={ref2}>
           <motion.div initial="hidden" animate={inView2 ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }}>
-            <div className="works-img">
-              <Image src={GitHubImage} alt="works-image" />
+            <div style={{ width: "100%", maxWidth: "600px", margin: "0 auto" }}>
+              <Image src={GitHubImage} alt="works-image" width={600} height={600} style={{ width: "100%", height: "auto" }} />
             </div>
-            <div className="button-link">
+            <div className="button-link" style={{ marginTop: "16px" }}>
               <a href="https://github.com/shin-tc-10" target="_blank" rel="noopener noreferrer" className="btn btn-flat">
                 <span>GitHub</span>
               </a>
             </div>
           </motion.div>
         </div>
-      </div>
 
         {/* <div className="link-table" id="link">
           <table>

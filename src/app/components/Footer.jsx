@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <p>©︎2025 Next Portfolio Site</p>
+      <p>©︎2026 Next Portfolio Site</p>
     </footer>
   );
 }
