@@ -22,7 +22,7 @@ function Works() {
 
   return (
     <div className="works" id="works">
-      <h2>Works</h2>
+      <h2>制作物</h2>
       <br/>
       <div className="works-app-box">
         <div className="works-app" ref={ref2}>

@@ -19,7 +19,7 @@ const Qualifications = () => {
   return (
     <div className="qualifications" id="qualifications" ref={ref}>
       <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.0 }}>
-        <h2>Qualifications</h2>
+        <h2>資格</h2>
         <br/>
         <div className="qualifications-box">
           <div className="qualification">

@@ -32,7 +32,7 @@ const Skills = () => {
   return (
     <div className="skills" id="skills" ref={ref}>
       <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.0 }}>
-        <h2>Skills</h2>
+        <h2>スキル</h2>
         <br/>
         <div className="skills-box">
           <div className="skill">

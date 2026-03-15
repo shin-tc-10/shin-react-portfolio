@@ -27,7 +27,7 @@ const SelfStudy = () => {
         variants={fadeInVariants}
         transition={{ duration: 2.0 }}
       >
-        <h2>SelfStudy</h2>
+        <h2>自己学習</h2>
         <br/>
         <div className="self-study-evidence-box">
           <div className="self-study-evidence">

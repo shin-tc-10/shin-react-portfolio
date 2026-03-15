@@ -25,7 +25,7 @@ const MyLink = () => {
         variants={fadeInVariants}
         transition={{ duration: 2.0 }}
       >
-        <h2>Blog/GitHub</h2>
+        <h2>GitHub</h2>
         <div className="works-app-box">
         <div className="works-app" ref={ref2}>
           <motion.div initial="hidden" animate={inView2 ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.5 }}>
