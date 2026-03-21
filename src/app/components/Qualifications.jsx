@@ -37,7 +37,7 @@ const Qualifications = () => {
         variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
         transition={{ duration: 2.0 }}
       >
-        <h2>資格</h2>
+        <h2>保有資格</h2>
         <div className="qualification-cards">
           {qualificationList.map((q, i) => {
             const color = categoryColor[q.category];
