@@ -2,12 +2,12 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import UdemyJavaIntellijWebAppImg from "../../../public/images/udemy-java-intellij-web-app.jpeg";
-import UdemyJavaSe8Img from "../../../public/images/udemy-java-se8.jpeg";
-import UdemyJavaSpringTodoImg from "../../../public/images/udemy-java-spring-todo.jpeg";
-import UdemyReact3TypesOfAppsImg from "../../../public/images/udemy-react-3 types-of-apps.jpeg";
-import UdemyReactTwitterCloneImg from "../../../public/images/udemy-react-twitter-clone.jpeg";
-import UdemyReactTrelloCloneImg from "../../../public/images/udemy-react-trello-clone.jpeg";
+import UdemyJavaIntellijWebAppImg from "../../../../public/images/udemy-java-intellij-web-app.jpeg";
+import UdemyJavaSe8Img from "../../../../public/images/udemy-java-se8.jpeg";
+import UdemyJavaSpringTodoImg from "../../../../public/images/udemy-java-spring-todo.jpeg";
+import UdemyReact3TypesOfAppsImg from "../../../../public/images/udemy-react-3 types-of-apps.jpeg";
+import UdemyReactTwitterCloneImg from "../../../../public/images/udemy-react-twitter-clone.jpeg";
+import UdemyReactTrelloCloneImg from "../../../../public/images/udemy-react-trello-clone.jpeg";
 
 const SelfStudy = () => {
   const [ref, inView] = useInView({

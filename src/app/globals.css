@@ -491,20 +491,18 @@ footer img {
   /** skill */
   .skills {
     margin: 5px;
+    padding: 0 5%;
   }
 
   .skills-box {
-    display: flex;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 
   .skill {
-    width: 22%;
     box-shadow: 0 0 3px gray;
     padding: 15px;
-    margin: 0 auto;
-    margin-bottom: 12px;
     background: white;
   }
 
@@ -649,12 +647,15 @@ footer img {
   .skills-box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .skill {
     width: 17%;
     box-shadow: 0 0 5px gray;
-    margin: 10px auto;
+    margin: 10px;
     background: white;
     opacity: 0.9;
   }

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import GitHubImage from "../../../public/images/gitHub.png";
+import GitHubImage from "../../../../public/images/gitHub.png";
 
 
 const MyLink = () => {

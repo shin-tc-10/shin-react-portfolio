@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import NextPortfolioSiteImage from "../../../public/images/next-portfolio-site.png";
-import PhotoSearchAppImage from "../../../public/images/photo-search-app.png";
-import MeisouAppImage from "../../../public/images/meisou-app.png";
-import ReactTodoListImage from "../../../public/images/react-todo-list.png";
-import NextBlogAppImage from "../../../public/images/next-blog-app.png";
+import NextPortfolioSiteImage from "../../../../public/images/next-portfolio-site.png";
+import PhotoSearchAppImage from "../../../../public/images/photo-search-app.png";
+import MeisouAppImage from "../../../../public/images/meisou-app.png";
+import ReactTodoListImage from "../../../../public/images/react-todo-list.png";
+import NextBlogAppImage from "../../../../public/images/next-blog-app.png";
 import Link from "next/link";
 
 function Works() {
