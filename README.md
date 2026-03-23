@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Next Portfolio Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shinのポートフォリオサイトです。Next.js（App Router）を用いて構築しています。
 
-## Available Scripts
+🔗 [https://shin-react-portfolio.vercel.app/](https://shin-react-portfolio.vercel.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 使用技術
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| 技術 | 用途 |
+|------|------|
+| Next.js 14 (App Router) | フレームワーク |
+| React 18 | UIライブラリ |
+| Framer Motion | スクロールアニメーション |
+| React Intersection Observer | 要素の表示検知 |
+| React Scroll | ページ内スムーズスクロール |
+| MUI (Material UI) | UIコンポーネント |
+| Vercel | ホスティング |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## コンポーネント設計
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 設計方針
 
-### `npm run build`
+コンポーネントを**役割ごとにディレクトリで分類**する設計を採用しています。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `layout/` : 全ページ共通のレイアウトコンポーネント
+- `sections/` : ページ内の各セクションコンポーネント
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+役割の異なるコンポーネントを混在させないことで、ファイルの見通しを良くし、保守性を高めています。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### コンポーネント構成図
 
-### `npm run eject`
+```
+src/app/
+├── layout.jsx              # 全ページ共通レイアウト（Header・Footer・メタ情報）
+├── page.jsx                # トップページ（各セクションの組み立て）
+├── components/
+│   ├── layout/
+│   │   ├── Header.jsx      # ナビゲーション・ハンバーガーメニュー
+│   │   └── Footer.jsx      # フッター
+│   └── sections/
+│       ├── Works.jsx       # 制作物一覧
+│       ├── Skills.jsx      # スキル一覧
+│       ├── Qualifications.jsx  # 資格
+│       ├── SelfStudy.jsx   # 自己学習
+│       ├── MyLink.jsx      # GitHubリンク
+│       └── About.jsx       # 自己紹介
+└── works/
+    └── [id]/
+        └── page.jsx        # 制作物詳細ページ（動的ルーティング）
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 各コンポーネントの役割
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**layout.jsx**
+App Router の RootLayout。全ページ共通の `<html>` / `<body>` 構造・メタ情報（SEO）・フォント設定を担当します。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**page.jsx**
+トップページのエントリーポイント。各セクションコンポーネントを組み合わせてページを構成します。タイトルのフェードインアニメーションをuseState・useEffectで管理しています。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Header.jsx**
+ナビゲーションメニューとハンバーガーメニューを管理します。`react-scroll` によるページ内スムーズスクロールと `next/link` によるページ遷移を使い分けています。
 
-## Learn More
+**Works.jsx**
+制作物をカード形式で一覧表示します。`react-intersection-observer` でスクロール検知し、`framer-motion` でフェードインアニメーションを実装しています。
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**works/[id]/page.jsx**
+Next.js の動的ルーティングを使った制作物詳細ページです。URLの `[id]` をもとに対応する制作物の詳細を表示します。
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ディレクトリ構成
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+shin-react-portfolio/
+├── public/
+│   └── images/         # 画像ファイル
+├── src/
+│   └── app/
+│       ├── components/
+│       │   ├── layout/
+│       │   └── sections/
+│       ├── works/[id]/
+│       ├── globals.css
+│       ├── layout.jsx
+│       └── page.jsx
+├── package.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 起動方法
 
-### Making a Progressive Web App
+```bash
+# 依存パッケージのインストール
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 開発サーバー起動
+npm run dev
+```
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[http://localhost:3000](http://localhost:3000) をブラウザで開いてください。
