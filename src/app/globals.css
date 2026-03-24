@@ -270,23 +270,25 @@ main {
   color: #0056b3;
 }
 
-/* 画像にカーソルを当てるとズームインする時の時間 */
+/* 画像エリアのスタイル */
 .works-img {
   margin: 15px;
-  transition: transform 0.3s ease;
-  /* マウスオーバー時のアニメーションを設定 */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.works-img img {
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .self-study-evidence-img {
   margin: 15px;
-  transition: transform 0.3s ease;
-  /* マウスオーバー時のアニメーションを設定 */
 }
 
-/* 画像にカーソルを当てるとズームイン */
-.works-app:hover .works-img {
-  transform: scale(1.1);
-  /* マウスオーバー時に画像を1.1倍に拡大（ズームイン） */
+/* 画像にカーソルを当てると画像を暗く・薄く */
+.works-img:hover img {
+  filter: brightness(0.7);
+  opacity: 0.85;
 }
 
 .self-study-evidence:hover .self-study-evidence-img {

@@ -25,7 +25,7 @@ function Works() {
     <div className="works" id="works">
       <h2>制作物</h2>
       <p style={{ fontSize: "0.85rem", fontWeight: "normal", marginTop: "8px", marginBottom: "16px" }}>
-        ReactやNext.jsを用いた制作物です。<br/>生成AI（Claude Code）を活用した制作物も含みます。
+        ReactやNext.jsを用いた制作物です。
       </p>
       <div className="works-app-box">
         <div className="works-app" ref={ref}>
