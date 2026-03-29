@@ -39,7 +39,7 @@ function Works() {
               </div>
               <div className="work-card-body">
                 <h3 className="work-card-title">ポートフォリオサイト</h3>
-                <p className="work-card-date">制作開始日: 2024.12</p>
+                <p className="work-card-date">制作開始日: 2023.07.09</p>
               </div>
             </Link>
           </motion.div>
@@ -56,7 +56,7 @@ function Works() {
               </div>
               <div className="work-card-body">
                 <h3 className="work-card-title">写真検索アプリ</h3>
-                <p className="work-card-date">制作開始日: 2024.03</p>
+                <p className="work-card-date">制作開始日: 2023.10.15</p>
               </div>
             </Link>
           </motion.div>
@@ -73,7 +73,7 @@ function Works() {
               </div>
               <div className="work-card-body">
                 <h3 className="work-card-title">瞑想アプリ</h3>
-                <p className="work-card-date">制作開始日: 2025.01</p>
+                <p className="work-card-date">制作開始日: 2026.03.15</p>
               </div>
             </Link>
           </motion.div>
@@ -90,7 +90,7 @@ function Works() {
               </div>
               <div className="work-card-body">
                 <h3 className="work-card-title">Todo アプリ</h3>
-                <p className="work-card-date">制作開始日: 2023.12</p>
+                <p className="work-card-date">制作開始日: 2023.10.09</p>
               </div>
             </Link>
           </motion.div>
@@ -107,7 +107,7 @@ function Works() {
               </div>
               <div className="work-card-body">
                 <h3 className="work-card-title">ブログアプリ</h3>
-                <p className="work-card-date">制作開始日: 2024.06</p>
+                <p className="work-card-date">制作開始日: 2024.02.17</p>
               </div>
             </Link>
           </motion.div>

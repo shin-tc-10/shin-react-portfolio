@@ -161,6 +161,52 @@ nav {
   display: grid;
   place-items: center;
   height: 100vh;
+  position: relative;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.scroll-indicator-text {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+}
+
+.scroll-indicator-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.scroll-indicator-arrow span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  transform: rotate(45deg);
+  animation: scrollArrow 1.6s ease infinite;
+}
+
+.scroll-indicator-arrow span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+@keyframes scrollArrow {
+  0% { opacity: 0; transform: rotate(45deg) translate(-4px, -4px); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: rotate(45deg) translate(4px, 4px); }
 }
 
 main {
@@ -296,10 +342,6 @@ main {
   opacity: 0.85;
 }
 
-.self-study-evidence:hover .self-study-evidence-img {
-  transform: scale(1.1);
-  /* マウスオーバー時に画像を1.1倍に拡大（ズームイン） */
-}
 
 .fade-in-text {
   opacity: 0;
@@ -723,17 +765,18 @@ footer img {
   .work-card-link {
     display: block;
     text-decoration: none;
-    color: #333;
-    background: #ffffff;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .work-card-link:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
   }
 
   .work-card-img {
@@ -760,7 +803,7 @@ footer img {
   .work-card-title {
     font-size: 0.9rem;
     text-align: left;
-    color: #333;
+    color: #fff;
     flex: 1;
     display: flex;
     align-items: center;
@@ -768,7 +811,7 @@ footer img {
 
   .work-card-date {
     font-size: 0.68rem;
-    color: #999;
+    color: rgba(255, 255, 255, 0.6);
     text-align: left;
   }
 

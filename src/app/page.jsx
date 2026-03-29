@@ -30,6 +30,17 @@ const Main = () => {
           <h1 className="glowing-text">Next Portfolio Site</h1>
           <p style={{ fontSize: "0.85rem", fontWeight: "normal", marginTop: "8px" }}>Created by Shin</p>
         </div>
+        <div
+          className="scroll-indicator"
+          onClick={() => document.getElementById("works").scrollIntoView({ behavior: "smooth" })}
+          style={{ cursor: "pointer" }}
+        >
+          <span className="scroll-indicator-text">SCROLL</span>
+          <div className="scroll-indicator-arrow">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
       <section>
         <Works />
