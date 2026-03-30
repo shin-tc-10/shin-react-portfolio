@@ -43,22 +43,22 @@ const Main = () => {
         </div>
       </div>
       <section>
+        <About />
+      </section>
+      <section>
         <Works />
-      </section>
-      <section>
-        <MyLink />
-      </section>
-      <section>
-        <SelfStudy />
       </section>
       <section>
         <Skills />
       </section>
       <section>
+        <SelfStudy />
+      </section>
+      <section>
         <Qualifications />
       </section>
       <section>
-        <About />
+        <MyLink />
       </section>
     </main>
   );

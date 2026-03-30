@@ -16,6 +16,13 @@ function About() {
     <div className="about-me" id="about" ref={ref}>
       <motion.div initial="hidden" animate={inView ? "visible" : "hidden"} variants={fadeInVariants} transition={{ duration: 2.0 }}>
         <h2>自己紹介</h2>
+
+        <div className="about-profile-card">
+          <p className="about-profile-name">Shin</p>
+          <p className="about-profile-title">Webエンジニア</p>
+          <p className="about-profile-desc">大阪出身。未経験からITエンジニアに転職。ReactやNext.jsを中心にWebアプリを制作しています。</p>
+        </div>
+
         <div className="cp_timeline04">
           <div className="timeline_item">
             <div className="time_date">

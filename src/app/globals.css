@@ -220,6 +220,35 @@ main {
   padding-bottom: 5em;
 }
 
+.about-profile-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 32px 40px;
+  margin-bottom: 48px;
+  text-align: left;
+}
+
+.about-profile-name {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.about-profile-title {
+  font-size: 0.85rem;
+  color: #a78bfa;
+  font-weight: normal;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.about-profile-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight: normal;
+  line-height: 1.8;
+}
+
 .cp_timeline04 {
   position: relative;
   /* margin: 3em auto; */
