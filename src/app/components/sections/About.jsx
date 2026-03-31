@@ -1,10 +1,10 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 function About() {
+  // 要素が画面内にあればtrue, 外ならfalse
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: true, // 一度だけ発火
   });
 
   const fadeInVariants = {

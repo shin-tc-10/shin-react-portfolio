@@ -19,13 +19,13 @@ function Header() {
         <span></span>
       </div>
       <nav className={`menu ${isMenuOpen ? "open" : ""}`}>
-        <NextLink href="/" smooth={true} duration={500}>ホーム</NextLink>
+        <NextLink href="/">ホーム</NextLink>
         <Link to="works" smooth={true} duration={500}>制作物</Link>
         <Link to="contact" smooth={true} duration={500}>GitHub</Link>
-        <Link to="selfStudy" smooth={true}  duration={500}>自己学習</Link>
-        <Link to="skills" smooth={true}  duration={500}>スキル</Link>
+        <Link to="selfStudy" smooth={true} duration={500}>自己学習</Link>
+        <Link to="skills" smooth={true} duration={500}>スキル</Link>
         <Link to="qualifications" smooth={true} duration={500}>資格</Link>
-        <Link to="about" smooth={true}  duration={500}>自己紹介</Link>
+        <Link to="about" smooth={true} duration={500}>自己紹介</Link>
       </nav>
     </header>
   );

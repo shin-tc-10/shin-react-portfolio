@@ -38,7 +38,7 @@ const Skills = () => {
           <div className="skill">
             <p>HTML</p>
             <div className="skill-img">
-              <Image src={HtmlImg} />
+              <Image src={HtmlImg} alt="HTML" />
             </div>
             <p>実務経験5年</p>
           </div>

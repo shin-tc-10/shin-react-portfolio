@@ -54,7 +54,7 @@ const SelfStudy = () => {
           <div className="self-study-evidence">
             <p>SpringBoot 課題管理アプリ</p>
             <div className="self-study-evidence-img">
-              <Image src={UdemyJavaIntellijWebAppImg} />
+              <Image src={UdemyJavaIntellijWebAppImg} alt="self-study-evidence" />
             </div>
             <p>習得技術：SpringBoot2</p>
           </div>

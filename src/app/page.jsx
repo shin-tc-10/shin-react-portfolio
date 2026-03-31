@@ -1,7 +1,7 @@
 // useState・useEffectを使うためにClient Componentとして宣言
 "use client"
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import About from "./components/sections/About";
 import Works from "./components/sections/Works";
 import Skills from "./components/sections/Skills";
@@ -32,7 +32,7 @@ const Main = () => {
         </div>
         <div
           className="scroll-indicator"
-          onClick={() => document.getElementById("works").scrollIntoView({ behavior: "smooth" })}
+          onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
           style={{ cursor: "pointer" }}
         >
           <span className="scroll-indicator-text">SCROLL</span>
